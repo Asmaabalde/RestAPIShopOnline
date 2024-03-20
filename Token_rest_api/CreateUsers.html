@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <h2>Formulaire d'inscription</h2>
+    <form action="registration.php" method="post">
+        <label for="name">Nom :
+        <input type="text" id="name" name="name" required><br>
+        <br><label for="email">Email : 
+        <input type="email" id="email" name="email" required><br>
+        <br><label for="age">Âge :
+        <input type="number" id="age" name="age" required><br>
+        <br><label for="designation">Désignation : 
+        <select id="designation" name="designation" required>
+            <option value="">Sélectionnez une désignation</option>
+            <option value="Administrateur">Administrateur</option>
+            <option value="Gestionnaire de stocks">Gestionnaire de stocks</option>
+            <option value="Vendeur">Vendeur</option>
+            <option value="Client">Client</option>
+        </select><br>        
+        <br><label for="password">Mot de passe:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="S'inscrire">
+    </form>
+</body>
+</html>
